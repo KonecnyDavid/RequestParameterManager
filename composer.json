@@ -1,0 +1,21 @@
+{
+    "name": "thecookieshows/request-parameter-manager",
+    "description": "Request parameter manager to easily access request parameters.",
+    "type": "library",
+    "require": {
+        "symfony/http-foundation": "^4.1"
+    },
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "authors": [
+        {
+            "name": "David Konečný",
+            "email": "david@konecny.eu"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "TheCookieShows": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
