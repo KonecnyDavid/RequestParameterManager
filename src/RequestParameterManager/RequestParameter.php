@@ -12,10 +12,10 @@ namespace RequestParameterManager;
 use RequestParameterManager\Parser\ParserInterface;
 
 /**
- * Class QueryParameter Represents query parameter
- * @package TheCookieShows\RequestParameterManager
+ * Class RequestParameter Represents request parameter
+ * @package RequestParameterManager
  */
-class QueryParameter
+class RequestParameter
 {
     /**
      * @var string
@@ -37,7 +37,7 @@ class QueryParameter
     private $parser = null;
 
     /**
-     * QueryParameter constructor.
+     * RequestParameter constructor.
      * @param string $name
      * @param string $value
      * @param bool $required
@@ -59,9 +59,9 @@ class QueryParameter
 
     /**
      * @param ParserInterface $parser
-     * @return  QueryParameter
+     * @return  RequestParameter
      */
-    public function setParser(ParserInterface $parser): QueryParameter
+    public function setParser(ParserInterface $parser): RequestParameter
     {
         $this->parser = $parser;
         return $this;

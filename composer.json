@@ -1,7 +1,8 @@
 {
     "name": "thecookieshows/request-parameter-manager",
     "description": "Request parameter manager to easily access request parameters.",
-    "keywords": ["request", "query", "get", "post"],
+    "keywords": ["request", "query", "get", "post", "symfony", "parameter", "manager"],
+    "version": "0.0.1",
     "type": "library",
     "require": {
         "symfony/http-foundation": "^4.1"
@@ -10,7 +11,8 @@
     "authors": [
         {
             "name": "David Konečný",
-            "email": "david@konecny.eu"
+            "email": "david@konecny.eu",
+            "homepage": "http://davidkonecny.eu"
         }
     ],
     "autoload": {

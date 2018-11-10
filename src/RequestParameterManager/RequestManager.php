@@ -13,10 +13,10 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 use TheCookieShows\RequestParameterManager\Exception\EmptyException;
 
 /**
- * Class QueryManager Used to manage query parameters
- * @package TheCookieShows\RequestParameterManager
+ * Class RequestManager Used to manage query parameters
+ * @package RequestParameterManager
  */
-class QueryManager
+class RequestManager
 {
     /**
      * @var array of given Parameters
@@ -24,14 +24,14 @@ class QueryManager
     private $parameters;
 
     /**
-     * QueryManager constructor.
+     * RequestManager constructor.
      * @param array $parameters
      * @param ParameterBag $parameterBag
-     * @throws EmptyException
+     * @throws \RequestParameterManager\Exception\EmptyException
      */
     public function __construct(array $parameters, ParameterBag $parameterBag)
     {
-        $this->parameters = QueryParameterProcessor::process($parameters, $parameterBag);
+        $this->parameters = RequestParameterProcessor::process($parameters, $parameterBag);
     }
 
     /**

@@ -11,7 +11,7 @@ namespace RequestParameterManager\Parser;
 
 /**
  * Class DatetimeParser used to parse string to Datetime
- * @package App\Utilities\Request\Query\Parser
+ * @package RequestParameterManager\Parser
  */
 class DatetimeParser implements ParserInterface
 {
@@ -19,8 +19,8 @@ class DatetimeParser implements ParserInterface
      * @inheritdoc
      * @return \DateTime
      */
-    public function parse(string $input) : \DateTime
+    public function parse(string $input, string $format = "d-m-Y H:i:s") : \DateTime
     {
-        return \DateTime::createFromFormat("d-m-Y H:i:s", $input);
+        return \DateTime::createFromFormat($format, $input);
     }
 }

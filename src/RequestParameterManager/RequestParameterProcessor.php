@@ -13,20 +13,20 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 use RequestParameterManager\Exception\EmptyException;
 
 /**
- * Class QueryParameterProcessor Processes query and fills parameters with values
+ * Class RequestParameterProcessor Processes query and fills parameters with values
  * @package TheCookieShows\RequestParameterManager
  */
-class QueryParameterProcessor
+class RequestParameterProcessor
 {
     /**
-     * Method for processing query
-     * @param array $queryParameters
+     * Method for processing Request Parameters
+     * @param array $parameters
      * @param ParameterBag $parameterBag
      * @return array
      * @throws EmptyException
      */
-    public static function process(array $queryParameters, ParameterBag $parameterBag){
-            foreach ($queryParameters as $field){
+    public static function process(array $parameters, ParameterBag $parameterBag){
+            foreach ($parameters as $field){
                 if ($parameterBag->has($field->getName())){
                     $field->setValue($parameterBag->get($field->getName()));
 
@@ -34,6 +34,6 @@ class QueryParameterProcessor
                     throw new EmptyException();
                 }
             }
-            return $queryParameters;
+            return $parameters;
     }
 }
