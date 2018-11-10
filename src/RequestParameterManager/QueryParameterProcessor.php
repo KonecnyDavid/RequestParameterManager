@@ -10,8 +10,7 @@ namespace TheCookieShows\RequestParameterManager;
 
 
 use Symfony\Component\HttpFoundation\ParameterBag;
-use TheCookieShows\RequestParameterManager\Exception\EmptyException;
-use Symfony\Component\HttpFoundation\Request;
+use RequestParameterManager\Exception\EmptyException;
 
 /**
  * Class QueryParameterProcessor Processes query and fills parameters with values

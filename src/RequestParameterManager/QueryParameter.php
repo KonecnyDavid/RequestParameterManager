@@ -6,10 +6,10 @@
  * Time: 18:53
  */
 
-namespace TheCookieShows\RequestParameterManager;
+namespace RequestParameterManager;
 
 
-use TheCookieShows\RequestParameterManager\Parser\ParserInterface;
+use RequestParameterManager\Parser\ParserInterface;
 
 /**
  * Class QueryParameter Represents query parameter
