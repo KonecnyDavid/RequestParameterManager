@@ -6,7 +6,7 @@
  * Time: 12:26
  */
 
-namespace TheCookieShows\RequestParameterManager\Exception;
+namespace RequestParameterManager\Exception;
 
 
 class EmptyException extends \Exception
