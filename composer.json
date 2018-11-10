@@ -1,7 +1,7 @@
 {
     "name": "thecookieshows/request-parameter-manager",
     "description": "Request parameter manager to easily access request parameters.",
-    "keywords": "request, query, get, post",
+    "keywords": ["request", "query", "get", "post"],
     "type": "library",
     "require": {
         "symfony/http-foundation": "^4.1"
