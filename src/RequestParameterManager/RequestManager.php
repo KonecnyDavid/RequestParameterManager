@@ -45,7 +45,6 @@ class RequestManager
             function ($item) use ($name) {
                     return $item->getName() == $name;
                 });
-        reset($element);
-        return $element[0]->getValue();
+        return reset($element)->getValue();
     }
 }
