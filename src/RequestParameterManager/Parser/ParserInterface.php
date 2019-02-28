@@ -6,7 +6,7 @@
  * Time: 19:25
  */
 
-namespace RequestParameterManager\Parser;
+namespace TheCookieShows\RequestParameterManager\Parser;
 
 
 /**

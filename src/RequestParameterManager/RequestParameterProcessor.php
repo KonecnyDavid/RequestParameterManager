@@ -6,7 +6,7 @@
  * Time: 18:55
  */
 
-namespace RequestParameterManager;
+namespace TheCookieShows\RequestParameterManager;
 
 
 use Symfony\Component\HttpFoundation\ParameterBag;

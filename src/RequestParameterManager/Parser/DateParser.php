@@ -6,7 +6,7 @@
  * Time: 14:15
  */
 
-namespace RequestParameterManager\Parser;
+namespace TheCookieShows\RequestParameterManager\Parser;
 
 
 class DateParser implements ParserInterface
