@@ -9,7 +9,7 @@
 namespace TheCookieShows\RequestParameterManager;
 
 
-use RequestParameterManager\Parser\ParserInterface;
+use TheCookieShows\RequestParameterManager\Parser\ParserInterface;
 
 /**
  * Class RequestParameter Represents request parameter
