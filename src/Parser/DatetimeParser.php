@@ -15,12 +15,18 @@ namespace TheCookieShows\RequestParameterManager\Parser;
  */
 class DatetimeParser implements ParserInterface
 {
+    private $format;
+    public function __construct(string $format)
+    {
+        $this->format = $format;
+    }
+
     /**
      * @inheritdoc
      * @return \DateTime
      */
-    public function parse(string $input, string $format = "d-m-Y H:i:s") : \DateTime
+    public function parse(string $input) : \DateTime
     {
-        return \DateTime::createFromFormat($format, $input);
+        return \DateTime::createFromFormat($this->format, $input);
     }
 }
