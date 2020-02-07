@@ -8,9 +8,8 @@
 
 namespace TheCookieShows\RequestParameterManager;
 
-
+use ParameterDoesNotExistException;
 use Symfony\Component\HttpFoundation\ParameterBag;
-use TheCookieShows\RequestParameterManager\Exception\EmptyException;
 
 /**
  * Class RequestManager Used to manage query parameters
@@ -41,10 +40,15 @@ class RequestManager
      */
     public function getParameterValue(string $name)
     {
-        $element = array_filter($this->parameters,
+        $elements = array_filter($this->parameters,
             function ($item) use ($name) {
                     return $item->getName() == $name;
                 });
-        return reset($element)->getValue();
+        $first = reset($elements);
+
+        if(!$first)
+                throw new ParameterDoesNotExistException();
+
+        return $first;
     }
 }
