@@ -18,13 +18,13 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 class RequestManager
 {
     /**
-     * @var array of given Parameters
+     * @var RequestParameter[] $parameters
      */
     private $parameters;
 
     /**
      * RequestManager constructor.
-     * @param array $parameters
+     * @param RequestParameter[] $parameters
      * @param ParameterBag $parameterBag
      * @throws \RequestParameterManager\Exception\EmptyException
      */
@@ -49,6 +49,6 @@ class RequestManager
         if(!$first)
                 throw new ParameterDoesNotExistException();
 
-        return $first;
+        return $first->getValue();
     }
 }
