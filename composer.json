@@ -4,7 +4,7 @@
     "keywords": ["request", "query", "get", "post", "symfony", "parameter", "manager"],
     "type": "library",
     "require": {
-        "symfony/http-foundation": "^4.1"
+        "symfony/http-foundation": ">=4.1"
     },
     "license": "MIT",
     "authors": [
